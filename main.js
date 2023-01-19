@@ -136,7 +136,7 @@ function nonSafariInit(){
 // For safari
 function safariIniti() {
     var pResult = window.safari.pushNotification.permission(domain);
-    
+
     if(pResult.permission === 'default') {
         //request permission
         requestPermissions();
@@ -153,7 +153,7 @@ function safariIniti() {
 function askSafari(){
 debugger
    if ('safari' in window && 'pushNotification' in window.safari) {
-        var permissionData = window.safari.pushNotification.permission('web.com.example.domain');
+        var permissionData = window.safari.pushNotification.permission('web.com.imiconnect.safari.safari15push');
         checkRemotePermission(permissionData);
     }
 //safariIniti();
@@ -175,6 +175,8 @@ var checkRemotePermission = function (permissionData) {
     else if (permissionData.permission === 'granted') {
         // The web service URL is a valid push provider, and the user said yes.
         // permissionData.deviceToken is now available to use.
+        console.log('%c devicetoken', 'background: green; color: white; display: block; font-size:20px');
+        console.log(permissionData.deviceToken);
     }
 };
 
