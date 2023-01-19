@@ -102,7 +102,7 @@ function subscribe() {
 
 // For safari
 function requestPermissions() {
-	const permission = await window.Notification.requestPermission();
+	//const permission = await window.Notification.requestPermission();
     window.safari.pushNotification.requestPermission('https://push-demo-lgmswqbdha-uc.a.run.app/push-api/v1/pushPackages/web.com.imiconnect.safari.safari15push', domain, {}, function(subscription) {
         console.log(subscription);
         if(c.permission === 'granted') {
