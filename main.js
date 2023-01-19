@@ -149,6 +149,11 @@ function safariIniti() {
     }
 }
 
+function askSafari(){
+debugger
+safariIniti();
+}
+
 /*
  * Call relevant methods.
  */
