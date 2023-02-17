@@ -4,7 +4,8 @@
  */
 const applicationServerPublicKey = 'BHJbjjDO-6F-eXTqtVVu_aHZ_yssYATwe-3bU8pqXwe8Xik0lkq6LI9rOojUbVqh46GQrxoObj4A4zv_T9hBpZ0';
 
-var domain = "lovely-longma-729982.netlify.app";
+//var domain = "lovely-longma-729982.netlify.app";
+var domain = "web.com.imiconnect.safari.safari15push";
 var ua = window.navigator.userAgent,
 safariTxt = ua.indexOf ( "Safari" ),
 chrome = ua.indexOf ( "Chrome" ),
